@@ -151,8 +151,8 @@ export default function Home() {
             </div>
           </div>
           <div className="congressos-footer">
-            <span>Year: 2023</span>
-            <span>Category: Organic Farming</span>
+            <span>Ano: 2024 | </span>
+            <span>Category: Edição especial</span>
           </div>
         </div>
 
