@@ -1,0 +1,856 @@
+
+.stats-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 0px;
+    flex-wrap: wrap;
+  
+    .card {
+      text-align: center;
+      align-items: center;
+      width: 25%;
+      position: relative;
+  
+      h3 {
+        font-size: 2.7rem;
+        color: #333;
+        text-align: center;
+        width: 100%;
+        line-height: 0;
+        text-shadow: 1px 1px 0 #91ff00, -2px -2px 0 #1a1a1a, 2px -2px 0 #000, -2px 2px 0 #222121; /* Borda simples */
+      }
+  
+      p {
+        font-size: 1.5rem;
+        margin-top: 0;
+        text-align: center;
+        color: #777;
+      }
+    }
+}
+
+.content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 75px;
+
+    .cardContent {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        // border-top: 1px solid black;
+        // border-bottom: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(238, 238, 238);
+        box-shadow: rgba(0, 0, 0, 0.267) 0px 1px 4px;
+        transition: 1s ease-in-out;
+
+        .text {
+          width: 45%;
+          display: flex;
+          flex-wrap: wrap;
+          height: 80%;
+          align-items: center;
+
+          h2, h3 {
+            text-align: left;
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: 10px;
+
+            strong {
+              background: linear-gradient(45deg, #006923, #ebfc00); 
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              margin-left: 175px;
+              letter-spacing: 2px;
+            }
+          }
+
+          p {
+            font-size: 1rem;
+            line-height: 1.7rem;
+          }
+        }
+        &:hover {
+          background-color: rgb(31, 31, 31);
+          background-image: linear-gradient(to right top, #111c2c, #222734, #32333c, #404045, #4e4e4e);
+
+          .text {
+
+            h2, p {
+              color: white;
+            }
+          }
+        }
+    }
+
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+
+  .textContainer {
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 5rem;
+      font-weight: normal;
+      line-height: 5rem;
+
+      .gradientText {
+        background: linear-gradient(45deg, #006fca, #03ec78); 
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    }
+  }
+
+  .separador {
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+
+  .featured-main {
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+
+    img {
+      width: 40%;
+      border-radius: 10px;
+      object-fit: cover;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+    }
+    img:hover {
+      transform: scale(1.05); /* Aplica o efeito de zoom sem alterar o tamanho */
+      /* Ajuste o valor de 1.2 para o nível de zoom desejado */
+  }
+
+    .featured-main-content {
+      flex: 1;
+      width: 20%;
+
+      h2 {
+        font-size: 2.5rem;
+        width: 90%;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-top: -25px;
+        letter-spacing: 1px;
+        color: orangered;
+        background: linear-gradient(45deg, #01ad88, #00a179); 
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #555;
+      }
+
+      span {
+        font-size: 0.9rem;
+        color: #888;
+      }
+    }
+  }
+
+  .featured-secondary {
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+
+    .card {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+      width: 80%;
+
+      img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+    }
+    
+    img:hover {
+        transform: scale(1.1); /* Aplica o efeito de zoom sem alterar o tamanho */
+        /* Ajuste o valor de 1.2 para o nível de zoom desejado */
+    }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-bottom: 0;
+        line-height: 1.4rem;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.3rem;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-top: 0;
+        color: #555;
+      }
+    }
+  }
+}
+
+
+.congressos-section {
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid black;
+
+
+  .congressos-content {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      width: 45%;
+      padding: 15px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 50px;
+      color: #555;
+      width: 45%;
+      margin-left: 50px;
+      line-height: 1.3rem;
+    }
+
+    .congressos-footer {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      background-color: yellow;
+      font-size: 0.9rem;
+      color: #888;
+
+      span {
+        &:not(:last-child)::after {
+          content: " | ";
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .congressos-images {
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    margin-top: 25px;
+    .main-image {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+      }
+    }
+
+    .side-images {
+      display: flex;
+      gap: 30px;
+      width: 50%;
+
+      img {
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.contadorSection {
+  width: 100%;
+  height: 550px;
+  background-color: rgb(27, 27, 27);
+  align-items: center;
+  display: inline-block;
+  margin-top: 150px;
+
+  h2 {
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 100px;
+
+    strong {
+       color: yellow;
+    }
+  }
+
+  h3 {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
+.parceiros-section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+
+  .parceiros-content {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+    .parceiros-texto {
+      padding-right: 20px;
+      width: 40%;
+      margin-left: 0;
+
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  
+    .parceiros-imagem {
+      width: 50%;
+      height: auto;
+      margin: auto;
+      border-radius: 10px;
+
+      img {
+        width: 40%;
+        margin-left: 45px;
+      }
+    }
+  }
+
+}
+
+.contato-section {
+  padding: 40px;
+  height: 600px;
+  background-color: #f8f8f8;
+  background-image: url('./6.jpg');
+
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .desktop {
+    text-align: center;
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    margin: auto;
+    color: whitesmoke;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .contato-content {
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+
+    .contato-form {
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      color: yellow;
+
+      .form-group {
+        margin-bottom: 15px;
+        color: white;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #111111;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .congressos-section {
+    padding: 0;
+
+    .congressos-content {
+      
+    }
+
+    .congressos-images {
+      width: 70%;
+    }
+  }
+
+  .content {
+    .cardContent {
+      .text {
+        h2 {
+          font-size: 4rem;
+          line-height: 4.2rem;
+          strong {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Responsivo para tablets */
+@media (max-width: 1024px) {
+  .container {
+    .textContainer {
+      h2 {
+        font-size: 4rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+
+.contadorSection {
+
+  button {
+    margin-left: 38.5%;
+  }
+}
+
+
+  .featured {
+
+     .featured-main {
+
+
+       img {
+
+       }
+
+       .featured-main-content {
+   
+         h2 {
+          font-size: 2rem;
+         }
+         h3 {
+
+         }
+
+         p {
+
+         }
+         span {
+
+         }
+       }
+     }
+
+     .featured-secondary {
+       .card {
+        gap: 5px;
+        padding: 0;
+        width: 98%;
+       }
+     }
+   }
+
+  .content {
+
+    .cardContent {
+      height: auto;
+
+      .text {
+        padding: 25px;
+        width: 50%;
+        
+
+        p {
+          font-size: .9rem;
+          line-height: 1.2rem;
+        }
+      }
+
+      .title {
+        width: 50%;
+      }
+    }
+  }
+
+  .parceiros-section {
+
+    .parceiros-content {
+  
+  
+      .parceiros-texto {
+  
+      }
+    
+      .parceiros-imagem {
+        img {
+          width: 250px ;
+          padding: 15px;
+        }
+      }
+    }
+  
+  }
+  
+
+  .congressos-section {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    .congressos-content {
+      width: 100%;
+
+      h2 {
+        width: 80%;
+      }
+
+      p {
+        margin-left: 15px;
+        margin-top: 0;
+        width: 90%;
+      }
+    }
+
+    .congressos-images {
+      width: 100%;
+      gap: 5px;
+
+       .main-image {
+        width: 40%;
+
+        img {
+          height: 270px;
+        }
+       }
+
+       .side-images {
+        gap: 5px;
+        img {
+          width: 230px;
+          height: 230px;
+        }
+       }
+    }
+  }
+}
+
+/* Responsivo para tablets */
+@media (max-width: 768px) {
+  .stats-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      width: 50%;
+      margin-bottom: 0px; 
+    }
+  }
+
+  .content {
+    height: auto;
+    flex-direction: column; 
+
+    .cardContent {
+      height: auto;
+
+      .text {
+        width: 80%; 
+        margin-bottom: 15px;
+  
+
+        h2 {
+          font-size: 1.7rem;
+        }
+
+       p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.congressos-section {
+  .congressos-content {
+    display: inline;
+  }
+
+  .congressos-images {
+    display: inline;
+     .main-image {
+      display: inline;
+      width: 100%;
+     }
+
+     .side-images {
+      display: inline-block;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+     }
+  }
+}
+.container {
+  .textContainer {
+    h2 {
+      font-size: 4rem;
+      line-height: normal;
+    }
+  }
+}
+}
+
+/* Responsivo para celulares */
+@media (max-width: 550px) {
+
+
+  .stats-section {
+    .card {
+
+
+      h3 {
+       font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .content {
+    height: auto; 
+
+      .cardContent {
+        height: auto;
+        display: inline;
+
+        .text {
+          padding: 10px;
+          margin-bottom: 10px;
+          display: inline-block;
+          width: 90%;
+
+           h2 {
+            font-size: 2.5rem;
+            margin-left: 20px;
+            line-height: 2.5rem;
+
+            strong {
+              margin-left: 50px;
+            }
+          }
+
+           p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-top: -35px;
+            padding: 20px;
+            width: 100%;
+          }
+
+          button {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .container {
+      .textContainer {
+        height: auto;
+        h2 {
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+
+.parceiros-section {
+
+  .parceiros-content {
+
+    display: inline-block;
+    .parceiros-texto {
+      width: 100%;
+      margin: auto;
+    }
+  
+    .parceiros-imagem {
+      width: 100%;
+      margin: auto;
+      margin-top: 75px;
+      img {
+        padding: 0;
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+  }
+
+}
+
+
+    .featured {
+     width: 100%;
+
+      .featured-main {
+        display: inline;
+        margin: auto;
+        width: 90%;
+
+        img {
+          width: 80%;
+          margin-left: 25px;
+          display: none;
+        }
+
+        .featured-main-content {
+          width: 100%;
+    
+          h2 {
+            width: 90%;
+            font-size: 1.5rem;
+            margin-left: 25px;
+          }
+          h3 {
+            margin-left: 25px;
+          }
+
+          p {
+            margin-left: 25px;
+            width: 90%;
+          }
+          span {
+            margin-left: 25px;
+            margin-top: 15px;
+            font-weight: bold;
+            width: 90%;
+          }
+        }
+      }
+
+      .featured-secondary {
+        display: inline;
+        width: 90%;
+
+        .card {
+          width: 90%;
+        }
+      }
+    }
+
+    .contadorSection {
+      width: 100%;
+      height: 600px;
+
+      h2 {
+        font-size: 2rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      button {
+        margin-left: 22%;
+      }
+    
+    }
+
+    .contato-section {
+      padding: 40px;
+      height: auto;
+      background-color: #f8f8f8;
+
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        margin: auto;
+        color: whitesmoke;
+        display: flex;
+        width: 100%;
+      }
+    }
+}
