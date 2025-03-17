@@ -1,13 +1,11 @@
 .HeaderSecundario {
     width: 100%;
-    height: 500px;
+    height: 65vh;
     background-color: rgb(26, 26, 26);
-    background-image: url(../assets/11.jpg);
-
-    background-position: center;
-    background-size: cover;
+    background-image: url(../assets/17.jpg);
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 
     .links {
         width: 72%;
@@ -37,17 +35,19 @@
         background-color: transparent;
 
         h2 {
-            font-size: 2.7rem;
+            font-size: 4rem;
+            letter-spacing: 1rem;
             color: white;
             margin-top: 0px;
             line-height: 0;
+            text-align: center;
         }
 
         p {
-            width: 80%;
             font-size: 1.2rem;
             font-weight: 300;
             line-height: 2rem;
+            text-align: center;
             color: white;
         }
     }
@@ -67,15 +67,16 @@
         }
     
         .container {
-    
+            width: 80%;
             h2 {
-                margin-top: 50px;
+                margin-top: 20px;
                 line-height: normal;
+                font-size: 2rem;
             }
     
             p {
-                font-size: .9rem;
-                line-height: normal;
+                font-size: .8rem;
+                line-height: 1.2rem;
                 width: 100%;
             }
         }

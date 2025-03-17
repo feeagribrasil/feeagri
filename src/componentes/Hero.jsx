@@ -13,7 +13,7 @@ export default function Hero() {
   const slides = [
     {
       image: Hero1,
-      title: 'FEEAGRI: União e Representatividade Estudantil',
+      title: 'Entidade Estudantil Nacional nas Ciências Agrárias',
       description: 'A FEEAGRI atua para fortalecer os laços entre estudantes de Engenharia Agrícola em todo o Brasil, promovendo eventos e defendendo seus interesses.',
       slug: 'federacao-brasileira',
     },

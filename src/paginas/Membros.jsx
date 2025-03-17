@@ -6,51 +6,63 @@ import Footer from '../componentes/Footer'
 import '../styles/buttons.scss'
 import { Link } from 'react-router-dom';
 
-import Imagem1 from '../assets/pessoa.jpg'
+import Imagem1 from '../assets/user.jpg'
 
 const membrosData = [
   {
-    nome: "João Silva",
-    instituicao: "UFPR",
+    nome: "Renan Neitzke",
+    instituicao: "Engenharia Agrícola UFPEL",
     cargo: "Presidente",
     foto: Imagem1
   },
   {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
+    nome: "Emanuelly Souza",
+    instituicao: "Engenharia Agrícola UFPR",
+    cargo: "Vice-Presidente",
     foto: Imagem1
   },
   {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
+    nome: "Felipe Borges",
+    instituicao: "Engenharia Agrícola UEG",
+    cargo: "Secretário Geral",
     foto: Imagem1
   },
   {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
+    nome: "Talisson Natan",
+    instituicao: "Engenharia Agrícola UFPEL",
+    cargo: "Coordenador Financeiro",
     foto: Imagem1
   },
   {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
+    nome: "Kamylla Farias",
+    instituicao: "Engenharia Agrícola UFMA",
+    cargo: "Coordenadora Científica",
     foto: Imagem1
   },
   {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
+    nome: "Luan Henrique",
+    instituicao: "Engenharia Agrícola UFPEL",
+    cargo: "1º Suplente",
     foto: Imagem1
   },
   {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
+    nome: "Mariane Oliveira",
+    instituicao: "Engenharia Agrícola UFVJM",
+    cargo: "2º Suplente",
     foto: Imagem1
   },
+  {
+    nome: "Matheus Meireles",
+    instituicao: "Engenharia Agrícola UFPR",
+    cargo: "3º Suplente",
+    foto: Imagem1
+  },
+  // {
+  //   nome: "André Bandeli",
+  //   instituicao: "Engenharia Agrícola UNICAMP",
+  //   cargo: "Desenvolvedor Web",
+  //   foto: Imagem1
+  // },
 ];
 
 const exMembrosData = [
@@ -175,7 +187,7 @@ export default function Membros() {
                      <div className="container">
                      <h2>Conselho Diretivo</h2>
                      <p>Conheça as pessoas que contribuem para a consolidação da Federação.</p>
-                     <button className='button_primary'><Link to={`/membros/delegacao`} className="">Página de Delegados</Link></button>
+                     <button className='button_primary_members'><Link to={`/membros/delegacao`} className="">Página de Delegados</Link></button>
                      </div>
                    </div>
                  <main>
@@ -192,7 +204,7 @@ export default function Membros() {
               </div>
             ))}
           </div>
-          <h2>Ex membros</h2>
+          {/* <h2>Ex membros</h2>
           <div className="membros">
             {exMembrosData.map((membro, index) => (
               <div key={index} className="cardMembro">
@@ -202,7 +214,7 @@ export default function Membros() {
                 <p>{membro.cargo}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
                   </div>
                  </main>

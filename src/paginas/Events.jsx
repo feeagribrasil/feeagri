@@ -15,72 +15,104 @@ import Imagem5 from '../assets/c4.png';
 import Imagem6 from '../assets/c5.jpeg';
 
 export default function Events() {
-
+  
   const congressos = [
-      {
-        image: Imagem1,
-        title: 'Federação Brasileira dos Estudantes de Engenharia Agrícola',
-        description: 'Somos uma organização estudantil que promove a união e o fortalecimento dos estudantes dessas áreas.',
-        slug: 'federacao-brasileira',
-      },
-      {
-        image: Imagem2,
-        title: 'O Futuro da Engenharia Agrícola!',
-        description: 'Juntos, impulsionamos a inovação no campo e promovemos a sustentabilidade!',
-        slug: 'futuro-engenharia-agricola',
-      },
-      {
-        image: Imagem3,
-        title: 'XXXVII CONEEAGRI e I ENPEAG',
-        description: 'Participe do evento e conecte-se com futuros engenheiros de todo o Brasil.',
-        slug: 'coneeagri-enpeag',
-      },
-      {
-        image: Imagem1,
-        title: 'Federação Brasileira dos Estudantes de Engenharia Agrícola',
-        description: 'Somos uma organização estudantil que promove a união e o fortalecimento dos estudantes dessas áreas.',
-        slug: 'federacao-brasileira',
-      },
-      {
-        image: Imagem2,
-        title: 'O Futuro da Engenharia Agrícola!',
-        description: 'Juntos, impulsionamos a inovação no campo e promovemos a sustentabilidade!',
-        slug: 'futuro-engenharia-agricola',
-      },
-      {
-        image: Imagem3,
-        title: 'XXXVII CONEEAGRI e I ENPEAG',
-        description: 'Participe do evento e conecte-se com futuros engenheiros de todo o Brasil.',
-        slug: 'coneeagri-enpeag',
-      },
-    ];
+    {
+      image: Imagem1,
+      title: 'XXXVII CONEEAGRI e I ENPEAG (2024) UFPR - Jandaia do Sul/PR',
+      edicao: 'XXXVII',
+      description:
+        'Ocorre de 22 a 26 de outubro de 2024 na UFPR - Campus Jandaia do Sul, promovendo inovação e integração entre estudantes de todo o Brasil.',
+      slug: 'coneeagri-2024',
+    },
+    {
+      image: Imagem2,
+      title: 'XXXVI CONEEAGRI (2023) Especial Online',
+      edicao: 'XXXVI',
+      description:
+        'Realizado de 24 a 27 de outubro de 2023 em Pirenópolis, Goiás, com o tema "Inovações Além do Campo: Transformando o Futuro".',
+      slug: 'coneeagri-2023',
+    },
+    {
+      image: Imagem3,
+      title: 'XXXV CONEEAGRI (2022) Especial Online',
+      edicao: 'XXXV',
+      description:
+        'Evento online realizado de 16 a 19 de novembro de 2022, com minicursos e palestras setoriais.',
+      slug: 'coneeagri-2022',
+    },
+    {
+      image: Imagem1,
+      title: 'XXXIV CONEEAGRI (2021) Especial Online',
+      edicao: 'XXXIV',
+      description:
+        'Edição online com palestras e minicursos focados nos desafios da Engenharia Agrícola e Ambiental.',
+      slug: 'coneeagri-2021',
+    },
+    {
+      image: Imagem2,
+      title: 'XXXIII CONEEAGRI (2020) Especial Online',
+      edicao: 'XXXIII',
+      description:
+        'Congresso realizado no formato virtual, adaptando-se ao contexto da pandemia, com debates sobre inovação no setor.',
+      slug: 'coneeagri-2020',
+    },
+    {
+      image: Imagem3,
+      title: 'XXXII CONEEAGRI (2019) UFPel - Pelotas RS',
+      edicao: 'XXXII',
+      description:
+        'Edição organizada pelo PET Engenharia Agrícola, promovendo discussões sobre tecnologia e sustentabilidade.',
+      slug: 'coneeagri-2019',
+    },
+    {
+      image: Imagem1,
+      title: 'XXXI CONEEAGRI (2018) UNICAMP - Campinas SP',
+      edicao: 'XXXI',
+      description:
+        'Realizado na Universidade Estadual de Campinas UNICAMP entre 8 e 15 de outubro de 2017, reunindo acadêmicos e profissionais do setor.',
+      slug: 'coneeagri-2017',
+    },
+    {
+      image: Imagem1,
+      title: 'XXXI CONEEAGRI (2017) UFLA - Lavras MG',
+      edicao: 'XXXI',
+      description:
+        'Realizado na Universidade Federal de Lavras (UFLA) entre 8 e 15 de outubro de 2017, reunindo acadêmicos e profissionais do setor.',
+      slug: 'coneeagri-2017',
+    },
+    {
+      image: Imagem2,
+      title: 'XXX CONEEAGRI (2016) UFF - Rio de Janeiro RJ',
+      edicao: 'XXX',
+      description:
+        'Ocorreu de 17 a 23 de abril de 2016 na Universidade Federal Fluminense (UFF) em Niterói, com programação voltada ao desenvolvimento agrícola.',
+      slug: 'coneeagri-2016',
+    },
+];
+
   
     
   return (
     <div>
       <Header />
-      <div className="HeaderSecundario">
-        <div className="links">
-          <h3>
-            <a href="">Home</a> | <a href="">Congressos</a>
-          </h3>
-        </div>
+      <div className="container_events">
         <div className="container">
-          <h2>Congressos</h2>
-          <p>Unindo estudantes e promovendo avanços na Engenharia Agrícola para um futuro mais sustentável.</p>
+          <h2> <strong>SAVE THE DATE</strong></h2>
+          <h3>XXXVIII CONEEAGRI & II ENPEAG</h3>
+            <div className="contador">
+              <Contador />
+            </div>
         </div>
+
       </div>
-      <div className="contadorSection2">
-        <h2><strong>XXXVIII</strong> CONEEAGRI & II ENPEAG</h2>
-        <h3>Local: UFPel - Pelotas/RS</h3>
-        <Contador />
-      </div>
+      
       <main>
         <div className="featuredSec">
           <div className="featuredSec-main">
             <div className="featuredSec-main-content">
-              <h3>Ultimas edições</h3>
-              <h2>XXXVII CONEEAGRI e I Encontro Nacional dos Profissionais de</h2>
+              <h3>Sobre o CONEEAGRI</h3>
+              <h2>Congresso Nacional dos Estudantes de Engenharia Agrícola, Agrícola e Ambiental e de Biossistemas</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolorem alias. Aperiam ducimus, debitis autem atque voluptatibus sunt officia placeat reiciendis est soluta, earum optio nisi expedita ut quod. Placeat.</p>
               <span>by FEEAGRI • December 20, 2024</span>
             </div>
@@ -90,7 +122,9 @@ export default function Events() {
           <div className="featuredSec-secondary">
           {congressos.map((congresso, index) => (
             <div className="card">
-            <img src={congresso.image} alt={congresso.title} />
+            <div className="img">
+            <h2>{congresso.edicao} CONEEAGRI</h2>
+            </div>
               <h3>{congresso.title}</h3>
               <p>{congresso.description}</p>
               <Link to={`/congressos/${congresso.slug}`} className="Hero__button">Saiba mais</Link>

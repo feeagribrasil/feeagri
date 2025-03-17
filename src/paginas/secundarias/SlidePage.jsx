@@ -3,31 +3,8 @@ import { useParams } from 'react-router-dom';
 import Header from '../../componentes/Header';
 import '../../styles/SecundaryPage.scss'
 import Footer from '../../componentes/Footer'
-
-import Hero1 from '../../assets/6.jpg';
-import Hero2 from '../../assets/5.jpg';
-import Hero3 from '../../assets/9.jpg';
-
-const slidesData = [
-  {
-    slug: 'federacao-brasileira',
-    title: 'Federação Brasileira dos Estudantes de Engenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biossistemas',
-    content: 'Somos uma organização estudantil que promove a união e o fortalecimento dos estudantes dessas áreas.',
-    img: Hero1,
-  },
-  {
-    slug: 'futuro-engenharia-agricola',
-    title: 'O Futuro da Engenharia Agrícola!',
-    content: 'Juntos, impulsionamos a inovação no campo e promovemos a sustentabilidade!',
-    img: Hero2,
-    },
-  {
-    slug: 'coneeagri-enpeag',
-    title: 'XXXVII CONEEAGRI e I ENPEAG',
-    content: 'Participe do evento e conecte-se com futuros engenheiros de todo o Brasil.',
-    img: Hero3,
-    },
-];
+import slidesData from './slidesData';
+import Widget from '../../componentes/Widget';
 
 export default function SlidePage() {
   const { slug } = useParams();
@@ -39,17 +16,27 @@ export default function SlidePage() {
 
   return (
     <div>
-        <Header />
-        <div className='secundaryPage'>
-        
+      <Header />
+      <div className='secundaryPage'></div>
+      <div className="containerSecundaryPage">
+        <h2>{slide.title}</h2>
+        <h3>{slide.content}</h3>
+        <img src={slide.img} alt={slide.title} />
+        <div className="container">
+          <div className="content">
+            <h2>{slide.titleTxt}</h2>
+            <p>{slide.text}</p>
+            <p>{slide.text2}</p>
+            <p>{slide.text3}</p>
+          </div>
+          <div className="widgets">
+            <Widget />
+          </div>
+         
         </div>
-        <div className="containerSecundaryPage">
-            <img src={slide.img} alt="" />
-        <h1>{slide.title}</h1>
-        <p>{slide.content}</p>
-    </div>
-    
-    <Footer />
+       
+      </div>
+      <Footer />
     </div>
   );
 }

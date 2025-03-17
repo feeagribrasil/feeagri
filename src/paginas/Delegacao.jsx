@@ -6,7 +6,7 @@ import Footer from '../componentes/Footer'
 import '../styles/buttons.scss'
 import { Link } from 'react-router-dom';
 
-import Imagem1 from '../assets/pessoa.jpeg'
+import Imagem1 from '../assets/user.jpg'
 
 const DelegacaoData = [
   {
@@ -175,7 +175,7 @@ export default function Delegacao() {
                      <div className="container">
                      <h2>Delegados de Instituições</h2>
                      <p>Conheça as pessoas que contribuem para a consolidação da Federação.</p>
-                     <button className='button_primary'><Link to={`/membros`} className="">Retornar</Link></button>
+                     <button className='button_primary_members'><Link to={`/membros`} className="">Membros do Conselho</Link></button>
                      </div>
                    </div>
                  <main>

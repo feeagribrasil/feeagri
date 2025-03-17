@@ -47,9 +47,9 @@
         // border-top: 1px solid black;
         // border-bottom: 1px solid black;
         border-radius: 20px;
-        background-color: rgb(238, 238, 238);
-        box-shadow: rgba(0, 0, 0, 0.267) 0px 1px 4px;
-        transition: 1s ease-in-out;
+        background-color: rgba(243, 243, 243, 0.658);
+        box-shadow: rgba(0, 0, 0, 0.507) 0px 1px 4px;
+        transition: .2s ease-in-out;
 
         .text {
           width: 45%;
@@ -80,15 +80,9 @@
           }
         }
         &:hover {
-          background-color: rgb(31, 31, 31);
-          background-image: linear-gradient(to right top, #111c2c, #222734, #32333c, #404045, #4e4e4e);
-
-          .text {
-
-            h2, p {
-              color: white;
-            }
-          }
+          // background-color: rgb(31, 31, 31);
+          // background-image: linear-gradient(to right top, #111c2c, #222734, #32333c, #404045, #4e4e4e);
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
     }
 
@@ -125,6 +119,24 @@
     margin: auto;
     height: 50px;
     border-bottom: 1px solid black;
+  }
+}
+
+.logos {
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 75px;
+  border-top: 1px solid rgba(27, 27, 27, 0.123);
+
+  img {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    margin: auto;
+    margin-left: 0;
   }
 }
 
@@ -468,6 +480,10 @@
       }
     }
   }
+
+  .logos {
+    display: none;
+  }
 }
 
 
@@ -609,6 +625,7 @@
        }
     }
   }
+  
 }
 
 /* Responsivo para tablets */
@@ -676,6 +693,7 @@
     }
   }
 }
+
 }
 
 /* Responsivo para celulares */
@@ -810,6 +828,7 @@
       .featured-secondary {
         display: inline;
         width: 90%;
+        margin-left: 45px;
 
         .card {
           width: 90%;
@@ -836,6 +855,7 @@
 
     .contato-section {
       padding: 40px;
+      width: 80%;
       height: auto;
       background-color: #f8f8f8;
 

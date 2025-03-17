@@ -80,6 +80,41 @@
     }
   }
 
+  .newsletter-posts {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 75px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .newsletter-posts .post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter-posts .post h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-posts .post p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .newsletter-posts .post .date {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+
   @media (max-width: 10240px) {
     .Newsletter {
       height: auto;

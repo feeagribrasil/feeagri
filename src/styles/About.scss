@@ -1,32 +1,46 @@
-.containerAbout {
 
+.mainContent {
     width: 70%;
+    height: auto;
+    display: flex;
     margin: auto;
-    margin-top: 75px;
-    padding-bottom: 75px;
-    border-bottom: 1px solid black;
+    justify-content: space-between;
 
-    h2 {
-        margin-bottom: 25px;
-        margin-top: 75px;
+    .widget {
+        width: 30%;
+        padding: 0;
     }
-
-    p {
-        line-height: 2rem;
-
-        strong {
-            font-weight: bolder;
+    .containerAbout {
+        width: 60%;
+        margin: auto;
+        margin-left: 0e;
+        margin-top: 25px;
+        padding-bottom: 75px;
+        border-bottom: 1px solid black;
+    
+        h2 {
+            margin-bottom: 25px;
+            margin-top: 75px;
         }
-    }
-
-    ul {
-
-        li {
-            padding: 10px;
+    
+        p {
+            line-height: 2rem;
+    
+            strong {
+                font-weight: bolder;
+            }
         }
+    
+        ul {
+    
+            li {
+                padding: 10px;
+            }
+        }
+    
     }
-
 }
+
 
 .depoimentos {
     width: 80%;
@@ -63,4 +77,36 @@
         background-color: rgb(15, 15, 15);
         margin: auto;
     }
+}
+
+@media (max-width: 1440px) {
+    
+    .mainContent {
+        width: 80%;
+
+        .containerAbout {
+            width: 60%;
+        
+        }
+    }
+    
+}
+
+@media (max-width: 550px) {
+    
+.mainContent {
+    width: 90%;
+    display: inline;
+
+    .widget {
+        width: 90%;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .containerAbout {
+        width: 80%;
+    
+    }
+}
+
 }

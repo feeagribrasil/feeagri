@@ -1,0 +1,41 @@
+.widget {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 75px;
+    padding: 0;
+
+    .contentWidget {
+        min-width: 250px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 2px solid rgba(179, 179, 179, 0.521);
+        padding: 5px;
+        margin-bottom: 25px;
+        img {
+            width: 100%;
+            height: 170px;
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        h2 {
+            width: 100%;
+            font-size: 1rem;
+            color: black;
+        }
+
+        .custom {
+            font-size: 1.2rem;
+            line-height: normal;
+            width: 100%;
+        }
+
+        p {
+            font-weight: 200;
+            font-size: .9rem;
+            line-height: 1.2rem;
+        }
+    }
+}
