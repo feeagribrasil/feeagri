@@ -22,7 +22,7 @@ export default function Events() {
       title: 'XXXVII CONEEAGRI e I ENPEAG (2024) UFPR - Jandaia do Sul/PR',
       edicao: 'XXXVII',
       description:
-        'Ocorre de 22 a 26 de outubro de 2024 na UFPR - Campus Jandaia do Sul, promovendo inovação e integração entre estudantes de todo o Brasil.',
+        'Ocorreu de 22 a 26 de outubro de 2024 na UFPR - Campus Jandaia do Sul, promovendo inovação e integração entre estudantes de todo o Brasil.',
       slug: 'coneeagri-2024',
     },
     {
@@ -100,6 +100,7 @@ export default function Events() {
         <div className="container">
           <h2> <strong>SAVE THE DATE</strong></h2>
           <h3>XXXVIII CONEEAGRI & II ENPEAG</h3>
+          <p>Universidade Federal de Pelotas - UFPEL</p>
             <div className="contador">
               <Contador />
             </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import axios from 'axios'; 
 import '../styles/Newsletter.scss';
-import leaf from '../assets/leaf.png'
+import leaf from '../assets/leaf.png';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
@@ -9,17 +10,32 @@ export default function Newsletter() {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // A lógica para enviar o e-mail será implementada aqui
-    console.log('E-mail cadastrado:', email);
+
+    try {
+      // Envia o email para o backend usando axios
+      const response = await axios.post('http://127.0.0.1:8000/newsletter/subscribe/', {
+        email: email, // Envia o email no corpo da requisição
+      });
+
+      if (response.status === 200) {
+        console.log('Sucesso:', response.data.message);
+        alert('Inscrição realizada com sucesso!');
+        setEmail(''); // Limpa o campo de email após o sucesso
+      }
+    } catch (error) {
+      // Trata erros da requisição
+      console.error('Erro:', error.response?.data?.message || error.message);
+      alert('Erro ao se inscrever. Tente novamente.');
+    }
   };
 
   return (
     <div className='Newsletter'>
       <div className='container'>
         <h2>Inscreva-se na nossa Newsletter! <img src={leaf} alt="" /></h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur voluptatem voluptates minus sunt officiis nobis hic recusandae quam, provident, possimus atque repudiandae! Vero ipsam necessitatibus quasi alias facere voluptatum dicta.</p>
+        <p>Inscreva-se em nossa newsletter e acompanhe semanalmente atualizações quinzenais sobre o meio agrícola, ambiental e tecnologias de biossistemas. Além de atualizações, utilizamos nossa newsletter como uma forma de atualizarmos nossos associados, delegados de instituições e nossos parceiros.  </p>
         <form onSubmit={handleSubmit}>
           <input
             type='email'

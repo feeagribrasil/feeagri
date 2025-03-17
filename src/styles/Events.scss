@@ -12,9 +12,12 @@
     margin: auto;
     margin-top: 150px;
     background-color: transparent;
+    align-items: center;
     
     h2 {
-      font-size: 105px;
+      width: 90%;
+      margin: auto;
+      font-size: 100px;
       letter-spacing: 55px;
       font-weight: 800;
       text-align: center;
@@ -29,6 +32,14 @@
       letter-spacing: .8rem;
       text-align: center;
       margin-top: 35px;
+
+    }
+    p {
+      font-size: 1rem;
+      letter-spacing: .5rem;
+      text-align: center;
+      margin-top: 15px;
+      color: whitesmoke;
 
     }
   }

@@ -62,7 +62,7 @@ const cardsData = [
   },
   {
     slug: 'organizacao-de-eventos',
-    title: 'CONEEAGRI: Um marco na união e na formação dos estudantes de engenharia',
+    title: 'CONEEAGRI representa um marco na união e na formação dos estudantes de engenharia',
     content: 'O CONEEAGRI é mais do que um evento: é o ponto de encontro para estudantes e profissionais de todo o Brasil compartilharem conhecimentos, experiências e fortalecerem os laços em prol do desenvolvimento técnico e científico [...]',
     spn: 'by FEEAGRI • December 20, 2024',
     img: Imagem3,
@@ -97,19 +97,19 @@ export default function Home() {
       
       <div className="stats-section">
         <div className="card">
-          <h3><StatsCounter finalNumber={30} /></h3>
+          <h3><strong>+</strong><StatsCounter finalNumber={30} /></h3>
           <p>Instituições de Ensino</p>
         </div>
         <div className="card">
-          <h3><StatsCounter finalNumber={5000} /></h3>
+          <h3><strong>+</strong><StatsCounter finalNumber={5000} /></h3>
           <p>Alunos em todo Brasil</p>
         </div>
         <div className="card">
-          <h3><StatsCounter finalNumber={20} /></h3>
+          <h3><strong>+</strong><StatsCounter finalNumber={20} /></h3>
           <p>Edições do CONEEAGRI</p>
         </div>
         <div className="card">
-          <h3><StatsCounter finalNumber={10} /></h3>
+          <h3><strong>+</strong><StatsCounter finalNumber={10} /></h3>
           <p>Anos de História e Contribuição</p>
         </div>
       </div>
@@ -138,7 +138,7 @@ export default function Home() {
               <div className="featured-main-content">
                 <h3>Nossas atividades</h3>
 
-                <h2>Fortalecendo a união e a representatividade dos estudantes nas Engenharias Agrícola, Agrícola e Ambiental e de Biossistemas.</h2>
+                <h2>Unificando a representatividade dos estudantes nas Engenharias Agrícola, Agrícola e Ambiental e de Biossistemas.</h2>
                 <p>A Federação se destaca por organizar e apoiar o CONEEAGRI, o maior evento nacional que reúne estudantes de todo o Brasil para compartilhar conhecimentos, experiências e fortalecer os laços entre as instituições de ensino dessas áreas. Nosso compromisso é impulsionar a colaboração e o desenvolvimento técnico-científico, criando um espaço inclusivo para a troca de ideias e a formação de futuros profissionais qualificados.</p>
                 <span>by FEEAGRI • December 20, 2024</span>
               </div>
@@ -170,7 +170,7 @@ export default function Home() {
           <h2>Conheça as últimas edições do CONEEAGRI e a edição especial do I ENPEAG.</h2>
           <p>
             <strong>Unindo estudantes de todo o Brasil</strong><br />
-            O CONEEAGRI e o I ENPEAG representam marcos na integração dos estudantes de Engenharia Agrícola, Agrícola e Ambiental e de Biossistemas. Esses eventos promovem a troca de conhecimento, o fortalecimento da rede acadêmica e a valorização das áreas de atuação. Juntos, celebramos a união e o avanço das nossas profissões, com um olhar voltado para inovação e sustentabilidade. 
+            A última edição do CONEEAGRI e o I ENPEAG  realizados na UFPR - Campus Jandaia do Sul, representam marcos na integração dos estudantes de Engenharia Agrícola, Agrícola e Ambiental e de Biossistemas. Esses eventos promovem a troca de conhecimento, o fortalecimento da rede acadêmica e a valorização das áreas de atuação. Juntos, celebramos a união e o avanço das nossas profissões, com um olhar voltado para inovação e sustentabilidade. 
            <br /> <button className="button_primary">
               <Link to={`/congressos`} className="">Todas as edições</Link>
             </button>
@@ -195,7 +195,7 @@ export default function Home() {
           <div className="parceiros-content">
             <div className="parceiros-texto">
               <h2>Nossos Parceiros</h2>
-              <p>Contamos com o apoio de diversas instituições e empresas que acreditam na nossa missão de promover a engenharia agrícola e ambiental.</p>
+              <p>Contamos com o apoio das principais instituições agrárias e empresas que acreditam na nossa missão de promover a engenharia agrícola e ambiental.</p>
             </div>
             <div className="parceiros-imagem">
               <img src={abeag} alt="Parceiros" />

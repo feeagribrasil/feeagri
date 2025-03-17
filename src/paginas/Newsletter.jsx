@@ -18,10 +18,7 @@ export default function Newsletter() {
         <div className="container">
           <h2>Newsletter</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            libero quibusdam laboriosam ipsum commodi ratione quia corporis
-            facilis eligendi ullam, explicabo neque in minus, voluptatem dolorum.
-            Veniam nulla sint maxime.
+            Acompanhe nossas atualizações quinzenais e fique por dentro das atualizações no setor agrícola.
           </p>
         </div>
       </div>

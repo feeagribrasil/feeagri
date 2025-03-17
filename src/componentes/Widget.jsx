@@ -8,24 +8,21 @@ import Imagem3 from '../assets/17.jpg';
 export default function Widget() {
 
     const contentData = [
-        {
-          slug: 'organizacao-de-eventos',
-          title: 'Organização de Eventos Acadêmicos',
-          text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer.',
-          img: Imagem2,
-        },
-        {
-          slug: 'incentivo-a-pesquisa-e-extensao',
-          title: 'Incentivo à Pesquisa e Extensão',
-          text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer.',
-          img: Imagem3,
-        },
-        {
-          slug: 'capacitacao-e-desenvolvimento',
-          title: 'Capacitação e Desenvolvimento',
-          text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer.',
-          img: Imagem4,
-        },
+      {
+        slug: 'organizacao-de-eventos',
+        title: 'Organização de Eventos Acadêmicos',
+        text: 'Uma das principais atividades da FEEAGRI consiste em atuar na manutenção do CONEEAGRI, garantindo, junto a outras intituiçõpes, a continuidade do maior congresso de estudantes de ENgenharia Agrícola, Engenharia Agrícola e Ambiental e Engenharia de Biosistemass'
+      },
+      {
+        slug: 'incentivo-a-pesquisa-e-extensao',
+        title: 'Incentivo à Pesquisa e Extensão',
+        text: 'Todas as edições do CONEEAGRI são pensadas para alcançar o maior número de estudantes, incentivando a apresentação de trabalhos acadêmicos e networking entre pesquisadores-profissionais. '
+      },
+      {
+        slug: 'capacitacao-e-desenvolvimento',
+        title: 'Capacitação e Desenvolvimento',
+        text: 'Atravérs de iniciativas envolvendo intituições e professores, atuamos na promoção de seminários e mini-cursos dos mais diversos tipos, buscando levar atualizações técnicas da área de maneira democrática. '
+      },
       ];
   return (
     <div className='widget'>

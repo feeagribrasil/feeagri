@@ -14,16 +14,26 @@
       position: relative;
   
       h3 {
-        font-size: 2.7rem;
+        font-size: 2.2rem;
+        width: auto;
+        margin: auto;
+        display: flex;
         color: #333;
         text-align: center;
-        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100px;
         line-height: 0;
-        text-shadow: 1px 1px 0 #91ff00, -2px -2px 0 #1a1a1a, 2px -2px 0 #000, -2px 2px 0 #222121; /* Borda simples */
+        text-shadow: 1px 1px 0 #91ff009d, -2px -2px 0 #ffffff3f, 2px -2px 0 #0000001e, -2px 2px 0 #222121; /* Borda simples */
+        padding: 15px;
+
+        strong {
+          margin-top: 15px;
+        }
       }
   
       p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-top: 0;
         text-align: center;
         color: #777;
@@ -45,7 +55,7 @@
         align-items: center;
         justify-content: center;
         // border-top: 1px solid black;
-        // border-bottom: 1px solid black;
+        // bordp-bottom: 1px solid black;
         border-radius: 20px;
         background-color: rgba(243, 243, 243, 0.658);
         box-shadow: rgba(0, 0, 0, 0.507) 0px 1px 4px;
