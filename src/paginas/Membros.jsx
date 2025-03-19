@@ -57,12 +57,12 @@ const membrosData = [
     cargo: "3º Suplente",
     foto: Imagem1
   },
-  // {
-  //   nome: "André Bandeli",
-  //   instituicao: "Engenharia Agrícola UNICAMP",
-  //   cargo: "Desenvolvedor Web",
-  //   foto: Imagem1
-  // },
+   {
+     nome: "André Bandeli",
+     instituicao: "Engenharia Agrícola UNICAMP",
+     cargo: "Desenvolvedor Web",
+     foto: Imagem1
+   },
 ];
 
 const exMembrosData = [

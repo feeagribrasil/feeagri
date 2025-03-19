@@ -4,9 +4,9 @@ import "../styles/Home.scss";
 import Hero from "../componentes/Hero";
 import { Link } from 'react-router-dom';
 import StatsCounter from "../componentes/StatsCounter";
-import Imagem1 from '../assets/16.jpg';
-import Imagem2 from '../assets/19.jpg';
-import Imagem3 from '../assets/17.jpg';
+import Imagem1 from '../assets/coneeagri.jpeg';
+import Imagem2 from '../assets/assembleia.jpg';
+import Imagem3 from '../assets/coneeagri2.jpeg';
 import Imagem4 from '../assets/21.jpg';
 import Imagem5 from '../assets/7.jpeg';
 import Imagem6 from '../assets/8.jpg';
@@ -55,14 +55,14 @@ const logos = [
 const cardsData = [
   {
     slug: 'representacao-estudantil',
-    title: 'Representatividade estudantil unindo futuros profissionais de todo o Brasil',
+    title: 'Realização de assembleias gerais, convocação para votação e representação institucional',
     content: 'A FEEAGRI atua como a voz dos estudantes das Engenharias Agrícola, Agrícola e Ambiental e de Biossistemas, promovendo a união e defendendo os interesses acadêmicos e profissionais em nível nacional [...]',
     spn: 'by FEEAGRI • December 20, 2024',
     img: Imagem2,
   },
   {
     slug: 'organizacao-de-eventos',
-    title: 'CONEEAGRI representa um marco na união e na formação dos estudantes de engenharia',
+    title: 'Promoção do Congresso Nacional dos Estudantes de ENgenharia Agrícola, Agrícola e Ambiental e Engenharia de Biossistemas',
     content: 'O CONEEAGRI é mais do que um evento: é o ponto de encontro para estudantes e profissionais de todo o Brasil compartilharem conhecimentos, experiências e fortalecerem os laços em prol do desenvolvimento técnico e científico [...]',
     spn: 'by FEEAGRI • December 20, 2024',
     img: Imagem3,
@@ -138,8 +138,8 @@ export default function Home() {
               <div className="featured-main-content">
                 <h3>Nossas atividades</h3>
 
-                <h2>Unificando a representatividade dos estudantes nas Engenharias Agrícola, Agrícola e Ambiental e de Biossistemas.</h2>
-                <p>A Federação se destaca por organizar e apoiar o CONEEAGRI, o maior evento nacional que reúne estudantes de todo o Brasil para compartilhar conhecimentos, experiências e fortalecer os laços entre as instituições de ensino dessas áreas. Nosso compromisso é impulsionar a colaboração e o desenvolvimento técnico-científico, criando um espaço inclusivo para a troca de ideias e a formação de futuros profissionais qualificados.</p>
+                <h2>A última edição do CONEEAGRI foi marcada pela realização do I ENPEAG, reunindo profissionais e estudantes do setor agrícola de todo o Brasil.</h2>
+                <p>O XXXVII CONEEAGRI, realizado na UFPR - Campus Jandaia do Sul, foi marcada pela realização do I Encontro Nacional dos Profissionais de Engenharia Agrícola. O encontro ocorreu no último dia do evento, em uma celebração comemorada com um almoço, engajando o networking entre estudantes e profissionais de todo o Brasil.</p>
                 <span>by FEEAGRI • December 20, 2024</span>
               </div>
               <img src={Imagem1} alt="Main Feature" />
@@ -151,7 +151,7 @@ export default function Home() {
                 <img src={card.img} alt="Feature 2" />
                 <h3><Link to={`/atividades/${card.slug}`}>{card.title}</Link></h3>
                 <p>{card.content}</p>
-                <span>{card.spn}</span>
+
               </div>
                  ))}
             </div>
@@ -203,20 +203,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        
-        {/* <div className="logos">
-        <div className="parceiros-texto">
-              <h2>Nossos Parceiros</h2>
-              <p>Contamos com o apoio de diversas instituições e empresas que acreditam na nossa missão de promover a engenharia agrícola e ambiental.</p>
-            </div>
-            <div>
-            {logos.map((logo, index) => (
-                              <img key={index} src={logo} alt={`Logo ${index + 1}`} />
-                                ))}
-            </div>
-
-                </div> */}
 
         <div className="contato-section">
           <h2>Entre em Contato</h2>
