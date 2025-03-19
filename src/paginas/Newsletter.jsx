@@ -3,6 +3,8 @@ import Header from "../componentes/Header";
 import "../styles/HeaderSecundario.scss";
 import NewsletterComponent from "../componentes/NewsletterComponent";
 import Footer from "../componentes/Footer";
+import { Link } from 'react-router-dom';
+
 
 export default function Newsletter() {
   return (
@@ -26,21 +28,21 @@ export default function Newsletter() {
       {/* Seção com Posts Simulados */}
       <section className="newsletter-posts">
         <div className="post">
-          <h3>#3. Avanços Tecnológicos na Engenharia Agrícola</h3>
+          <h3><Link to={`/post`}>#3. Eleições para o conselho diretivo</Link></h3>
           <p>
-            A engenharia agrícola tem se beneficiado de inovações tecnológicas, como o uso de drones para monitoramento de culturas, sensores de umidade do solo e máquinas autônomas que aumentam a produtividade e a eficiência no campo. Essas tecnologias não apenas facilitam o trabalho dos profissionais, mas também contribuem para práticas agrícolas mais sustentáveis.
+            Confira as novidades que os membros do conselho diretivo prepararam para garantir maior representatividade nas eleições.
           </p>
           <span className="date">March 3, 2025</span>
         </div>
         <div className="post">
-          <h3>#2. Sustentabilidade e Inovação no Agronegócio</h3>
+        <h3><Link to={`/post`}>#2. Eleições para o conselho diretivo</Link></h3>
           <p>
             A sustentabilidade é um tema cada vez mais presente na engenharia agrícola. O uso de técnicas de cultivo mais eficientes, como a agricultura de precisão e a rotação de culturas, está ajudando a reduzir o impacto ambiental das práticas agrícolas. A inovação nesse setor é fundamental para garantir a produção de alimentos de forma responsável e com menor impacto no meio ambiente.
           </p>
           <span className="date">March 2, 2025</span>
         </div>
         <div className="post">
-          <h3>#1. Desafios da Irrigação no Brasil</h3>
+        <h3><Link to={`/post`}>#1. Eleições para o conselho diretivo</Link></h3>
           <p>
             O Brasil, apesar de ser um país com abundância hídrica, enfrenta desafios significativos na gestão da irrigação. A engenharia agrícola desempenha um papel crucial na implementação de sistemas eficientes que otimizem o uso da água nas lavouras, evitando desperdícios e garantindo o abastecimento para a agricultura em diferentes regiões do país.
           </p>

@@ -12,6 +12,10 @@ import SlidePage from "./paginas/secundarias/SlidePage";
 import CongressosPage from "./paginas/secundarias/CongressosCard";
 import Delegacao from "./paginas/Delegacao";
 import Content from "./paginas/secundarias/Content";
+import Suporte from "./paginas/Suporte";
+import DelegacaoSup from "./paginas/DelegacaoSup";
+import ConselhoDiretivo from "./paginas/ConselhoDiretivo";
+import NewsletterPost from "./paginas/NewsletterPosts";
 
 function App() {
 
@@ -27,6 +31,12 @@ function App() {
       <Route path="/membros/delegacao" element={<Delegacao />} />
       <Route path="/parceiros" element={<Parceiros />} />
       <Route path="/newsletter" element={<Newsletter />} />
+      <Route path="/suporte" element={<Suporte />} />
+      <Route path="/delegacao" element={<DelegacaoSup />} />
+      <Route path="/conselho-diretivo" element={<ConselhoDiretivo />} />
+      <Route path="/post" element={<NewsletterPost />} />
+
+
     </Routes>
   );
 }

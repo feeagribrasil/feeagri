@@ -7,7 +7,7 @@ import "../styles/Events.scss";
 import Footer from '../componentes/Footer';
 import Contador from '../componentes/Contador';
 
-import Imagem1 from '../assets/coneeagri.webp';
+import Imagem1 from '../assets/coneeagri.jpeg';
 import Imagem2 from '../assets/c1.jpeg';
 import Imagem3 from '../assets/c2.png';
 import Imagem4 from '../assets/c3.jpeg';
