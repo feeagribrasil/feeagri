@@ -160,7 +160,7 @@ export default function Home() {
 
         <div className="contadorSection">
           <h2><strong>XXXVIII</strong> CONEEAGRI & II ENPEAG</h2>
-          <h3>Local: <strong>UFPEL</strong> -  Universidade Federal de Pelotas - Pelotas/RS <br />Data: de X a Y de outubro de 2025</h3>
+          <h3>Universidade Federal de Pelotas - Pelotas/RS <br />De 27 à 30 de outubro de 2025</h3>
           <Contador />
           <button className="button_secundary_red">Inscreva-se [em breve]</button>
         </div>
