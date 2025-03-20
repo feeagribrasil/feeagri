@@ -49,3 +49,27 @@
         }
       }
 }
+
+@media (max-width: 768px) {
+  .containerCustom {
+
+    
+    
+    .container {
+      margin-left: 0;
+      width: 85%;
+    
+        h2 {
+
+        }
+    
+        .membros {
+
+    
+          .cardMembro {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+}

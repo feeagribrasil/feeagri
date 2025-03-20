@@ -13,9 +13,10 @@
     margin-top: 150px;
     background-color: transparent;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     
     h2 {
-      width: 90%;
       margin: auto;
       font-size: 100px;
       letter-spacing: 55px;
@@ -28,13 +29,16 @@
       margin-bottom: 0;
     }
     h3 {
+      width: 100%;
       font-size: 1.5rem;
       letter-spacing: .8rem;
       text-align: center;
+      margin: auto;
       margin-top: 35px;
 
     }
     p {
+      width: 100%;
       font-size: 1rem;
       letter-spacing: .5rem;
       text-align: center;
@@ -250,6 +254,7 @@
         width: 32%;
         padding: 0;
         gap: 0;
+        margin-bottom: 50px;
 
         img {
           width: 100%;
@@ -268,10 +273,11 @@
 
 
   .container {
-    width: 80%;
+    width: 90%;
     h2 {
       font-size: 2rem;
-      line-height: 2.5rem;
+      line-height: 3rem;
+      margin-left: 45px;
       
     }
     h3 {

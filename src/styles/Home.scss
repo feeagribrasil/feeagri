@@ -105,8 +105,9 @@
 
   .textContainer {
     width: 80%;
-    height: 450px;
+    height: auto;
     margin: auto;
+    margin-top: 75px; margin-bottom: 75px;
     display: flex;
     align-items: center;
 
@@ -767,10 +768,11 @@
       }
     }
     .container {
+      margin-top: 50px;
       .textContainer {
         height: auto;
         h2 {
-          font-size: 2.4rem;
+          font-size: 2.3rem;
         }
       }
     }

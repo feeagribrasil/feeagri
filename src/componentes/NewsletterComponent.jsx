@@ -35,7 +35,9 @@ export default function Newsletter() {
     <div className='Newsletter'>
       <div className='container'>
         <h2>Inscreva-se na nossa Newsletter! <img src={leaf} alt="" /></h2>
-        <p>Inscreva-se em nossa newsletter e acompanhe semanalmente atualizações quinzenais sobre o meio agrícola, ambiental e tecnologias de biossistemas. Além de atualizações, utilizamos nossa newsletter como uma forma de atualizarmos nossos associados, delegados de instituições e nossos parceiros.  </p>
+        <p>Inscreva-se em nossa newsletter e acompanhe atualizações quinzenais sobre o meio agrícola, ambiental e tecnologias de biossistemas. Além de atualizações, utilizamos nossa newsletter como uma forma de atualizarmos nossos associados, delegados de instituições e nossos parceiros.  </p>
+        <p className='mob'>Inscreva-se em nossa newsletter e acompanhe atualizações quinzenais sobre o meio agrícola, ambiental e tecnologias de biossistemas</p>
+
         <form onSubmit={handleSubmit}>
           <input
             type='email'

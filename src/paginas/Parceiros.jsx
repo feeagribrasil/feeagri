@@ -14,7 +14,7 @@ export default function Parceiros() {
                        </div>
                          <div className="container">
                          <h2>Nossos Parceiros</h2>
-                         <p>Somos gratos por contar com o apoio de organizações e instituições que compartilham nossa visão e valores. Nossos parceiros são essenciais para promover o desenvolvimento da Engenharia Agrícola e fortalecer a colaboração em iniciativas que beneficiam estudantes, profissionais e a sociedade.</p>
+                         <p>Contamos com o apoio de organizações e instituições que compartilham nossa visão e valores, que nos ajudam a construir uma classe forte.</p>
                          </div>
                        </div>
                      <main>

@@ -65,116 +65,6 @@ const membrosData = [
   //  },
 ];
 
-const exMembrosData = [
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },  {
-    nome: "João Silva",
-    instituicao: "UFPR",
-    cargo: "Presidente",
-    foto: Imagem1
-  },
-
-];
 
 export default function Membros() {
   return (
@@ -187,7 +77,10 @@ export default function Membros() {
                      <div className="container">
                      <h2>Conselho Diretivo</h2>
                      <p>Conheça as pessoas que contribuem para a consolidação da Federação.</p>
-                     <button className='button_primary_members'><Link to={`/membros/delegacao`} className="">Página de Delegados</Link></button>
+                     <div className='btn'>
+                      <button className='button_primary_members'><Link to={`/membros/delegacao`} className="">Página de Delegados</Link></button>
+                     </div>
+                     
                      </div>
                    </div>
                  <main>
