@@ -20,7 +20,7 @@ const ContatoForms = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:8000/newsletter/subscribe/', {
+      const response = await fetch('apifeeagri-production.up.railway.app/subscribe/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

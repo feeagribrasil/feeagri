@@ -15,7 +15,7 @@ export default function Newsletter() {
 
     try {
       // Envia o email para o backend usando axios
-      const response = await axios.post('http://127.0.0.1:8000/newsletter/subscribe/', {
+      const response = await axios.post('apifeeagri-production.up.railway.app/newsletter/subscribe/', {
         email: email, // Envia o email no corpo da requisição
       });
 
