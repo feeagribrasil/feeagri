@@ -18,6 +18,8 @@ import Footer from "../componentes/Footer";
 import NewsletterComponent from "../componentes/NewsletterComponent";
 import '../styles/buttons.scss'
 
+import ContatoForms from "../componentes/ContatoForms";
+
 const cardsData = [
   {
     slug: 'representacao-estudantil',
@@ -171,7 +173,8 @@ export default function Home() {
         </div>
 
         <div className="contato-section">
-          <h2>Entre em Contato</h2>
+          <ContatoForms /> 
+          {/* <h2>Entre em Contato</h2>
           <p className="desktop">Tem alguma dúvida, sugestão ou gostaria de saber mais sobre nossas atividades? Estamos aqui para ouvir você! 
           Entre em contato com a FEEAGRI e faça parte da construção de um futuro mais conectado e inovador para nossas áreas.</p>
           <p className="mobile">Tem alguma dúvida, sugestão ou gostaria de saber mais sobre nossas atividades? Estamos aqui para ouvir você!</p>
@@ -194,7 +197,7 @@ export default function Home() {
                 <button type="submit" className="button_primary">Enviar</button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </main>
     
