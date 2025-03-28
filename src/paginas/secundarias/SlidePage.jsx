@@ -4,7 +4,8 @@ import Header from '../../componentes/Header';
 import '../../styles/SecundaryPage.scss'
 import Footer from '../../componentes/Footer'
 import slidesData from './slidesData';
-import Widget from '../../componentes/Widget';
+import Widget from '../../componentes/WidgetCustom';
+
 
 export default function SlidePage() {
   const { slug } = useParams();

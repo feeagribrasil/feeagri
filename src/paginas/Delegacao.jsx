@@ -175,7 +175,9 @@ export default function Delegacao() {
                      <div className="container">
                      <h2>Delegados de Instituições</h2>
                      <p>Conheça as pessoas que contribuem para a consolidação da Federação.</p>
-                     <button className='button_primary_members'><Link to={`/membros`} className="">Membros do Conselho</Link></button>
+                     <div className='btn'>
+                                           <button className='button_primary_members'><Link to={`/membros/`} className="">Conselho Diretivo</Link></button>
+                                          </div>
                      </div>
                    </div>
                  <main>

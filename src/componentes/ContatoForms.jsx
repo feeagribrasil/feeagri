@@ -33,6 +33,7 @@ const ContatoForms = () => {
       if (response.ok) {
         setStatus({ type: 'success', message: data.message });
         setFormData({ email: '', telefone: '', mensagem: '' });
+        setTimeout(() => setStatus({ type: '', message: '' }), 3000);
       } else {
         setStatus({ type: 'error', message: data.message || 'Erro ao enviar' });
       }

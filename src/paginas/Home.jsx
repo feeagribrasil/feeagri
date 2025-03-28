@@ -73,11 +73,11 @@ export default function Home() {
           <p>Alunos em todo Brasil</p>
         </div>
         <div className="card">
-          <h3><strong>+</strong><StatsCounter finalNumber={20} /></h3>
+          <h3><strong>+</strong><StatsCounter finalNumber={10} /></h3>
           <p>Edições do CONEEAGRI</p>
         </div>
         <div className="card">
-          <h3><strong>+</strong><StatsCounter finalNumber={10} /></h3>
+          <h3><strong>+</strong><StatsCounter finalNumber={12} /></h3>
           <p>Anos de História e Contribuição</p>
         </div>
       </div>
