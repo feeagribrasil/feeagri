@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.66bceed4.css",
-    "main.js": "/static/js/main.b0a7d605.js",
+    "main.js": "/static/js/main.ab44d055.js",
     "static/media/21.jpg": "/static/media/21.29352b525d29ab131f4d.jpg",
     "static/media/6.jpg": "/static/media/6.82690cab991dde7b43d1.jpg",
     "static/media/11.jpg": "/static/media/11.4c0381b148a924cde8b4.jpg",
@@ -12,7 +12,6 @@
     "static/media/17.jpg": "/static/media/17.59e0d7bbe7b5641499f1.jpg",
     "static/media/9.jpg": "/static/media/9.7ef05ec11dfa60923191.jpg",
     "static/media/5.jpg": "/static/media/5.ba4c31e3cba52df46781.jpg",
-    "static/media/19.jpg": "/static/media/19.6be7a157559e4c405769.jpg",
     "static/media/c4.png": "/static/media/c4.03f33e577fbe7fadb263.png",
     "static/media/coneeagri2.jpeg": "/static/media/coneeagri2.cb9fd03a43475618e15d.jpeg",
     "static/media/coneeagri.jpeg": "/static/media/coneeagri.34e5c27edc0f66c53e27.jpeg",
@@ -29,10 +28,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.66bceed4.css.map": "/static/css/main.66bceed4.css.map",
-    "main.b0a7d605.js.map": "/static/js/main.b0a7d605.js.map"
+    "main.ab44d055.js.map": "/static/js/main.ab44d055.js.map"
   },
   "entrypoints": [
     "static/css/main.66bceed4.css",
-    "static/js/main.b0a7d605.js"
+    "static/js/main.ab44d055.js"
   ]
 }
