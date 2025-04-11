@@ -1,101 +1,108 @@
+@import "variables";
+
+p {
+  font-weight: $p-font-weight;
+}
 
 .stats-section {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
-    margin-top: 0px;
-    flex-wrap: wrap;
-  
-    .card {
-      text-align: center;
-      align-items: center;
-      width: 25%;
-      position: relative;
-  
-      h3 {
-        font-size: 2.2rem;
-        width: auto;
-        margin: auto;
-        display: flex;
-        color: #333;
-        text-align: center;
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100px;
-        line-height: 0;
-        text-shadow: 1px 1px 0 #91ff009d, -2px -2px 0 #ffffff3f, 2px -2px 0 #0000001e, -2px 2px 0 #222121; /* Borda simples */
-        padding: 15px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 0px;
+  flex-wrap: wrap;
 
-        strong {
-          margin-top: 15px;
-        }
-      }
-  
-      p {
-        font-size: 1.3rem;
-        margin-top: 0;
-        text-align: center;
-        color: #777;
+  .card {
+    text-align: center;
+    width: 23%;
+    margin: auto;
+    position: relative;
+
+    h2 {
+      font-size: 2rem;
+      width: auto;
+      margin: auto;
+      display: flex;
+      color: #333;
+      text-align: center;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100px;
+      line-height: 0;
+      text-shadow: 1px 1px 0 #91ff009d, -2px -2px 0 #ffffff3f,
+        2px -2px 0 #0000001e, -2px 2px 0 #222121;
+      padding: 15px;
+
+      strong {
+        margin-top: 40px;
       }
     }
+
+    p {
+      font-size: 1.4rem;
+      line-height: $line-height-normal;
+      font-family: $p-font-family;
+      margin-top: 0;
+      text-align: center;
+      color: #777;
+    }
+  }
 }
 
 .content {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-top: 75px;
+
+  .cardContent {
+    width: 90%;
+    height: 90%;
     display: flex;
-    margin-top: 75px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(243, 243, 243, 0.658);
+    box-shadow: rgba(0, 0, 0, 0.507) 0px 1px 4px;
+    transition: 0.2s ease-in-out;
 
-    .cardContent {
-        width: 90%;
-        height: 90%;
-        display: flex;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-        // border-top: 1px solid black;
-        // bordp-bottom: 1px solid black;
-        border-radius: 20px;
-        background-color: rgba(243, 243, 243, 0.658);
-        box-shadow: rgba(0, 0, 0, 0.507) 0px 1px 4px;
-        transition: .2s ease-in-out;
+    .text {
+      width: 45%;
+      display: flex;
+      flex-wrap: wrap;
+      height: 80%;
+      align-items: center;
 
-        .text {
-          width: 45%;
-          display: flex;
-          flex-wrap: wrap;
-          height: 80%;
-          align-items: center;
+      h2,
+      h3 {
+        text-align: left;
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: 10px;
 
-          h2, h3 {
-            text-align: left;
-            font-size: 5rem;
-            line-height: 5rem;
-            letter-spacing: 10px;
-
-            strong {
-              background: linear-gradient(45deg, #006923, #ebfc00); 
-              -webkit-background-clip: text;
-              background-clip: text;
-              color: transparent;
-              margin-left: 175px;
-              letter-spacing: 2px;
-            }
-          }
-
-          p {
-            font-size: 1rem;
-            line-height: 1.7rem;
-          }
+        strong {
+          background: linear-gradient(45deg, #006923, #ebfc00);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          margin-left: 175px;
+          letter-spacing: 2px;
         }
-        &:hover {
-          // background-color: rgb(31, 31, 31);
-          // background-image: linear-gradient(to right top, #111c2c, #222734, #32333c, #404045, #4e4e4e);
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
+      }
+
+      p {
+        font-size: $p-font-size;
+        line-height: $line-height-normal;
+        font-family: $p-font-family;
+      }
     }
-
+    &:hover {
+      // background-color: rgb(31, 31, 31);
+      // background-image: linear-gradient(to right top, #111c2c, #222734, #32333c, #404045, #4e4e4e);
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+  }
 }
 
 .container {
@@ -107,7 +114,8 @@
     width: 80%;
     height: auto;
     margin: auto;
-    margin-top: 75px; margin-bottom: 75px;
+    margin-top: 75px;
+    margin-bottom: 75px;
     display: flex;
     align-items: center;
 
@@ -117,11 +125,11 @@
       line-height: 5rem;
 
       .gradientText {
-        background: linear-gradient(45deg, #006fca, #03ec78); 
+        background: linear-gradient(45deg, #006fca, #03ec78);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-    }
+      }
     }
   }
 
@@ -165,41 +173,43 @@
 
     img {
       width: 40%;
-      border-radius: 10px;
       object-fit: cover;
       border-radius: 10px;
-      object-fit: cover;
-      transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+      transition: transform 0.3s ease;
     }
     img:hover {
-      transform: scale(1.05); /* Aplica o efeito de zoom sem alterar o tamanho */
-      /* Ajuste o valor de 1.2 para o nível de zoom desejado */
-  }
+      transform: scale(
+        1.05
+      );
+
+    }
 
     .featured-main-content {
       flex: 1;
       width: 20%;
 
       h2 {
-        font-size: 2.3rem;
+        font-size: $h2-font-size;
         width: 90%;
         margin-bottom: 1rem;
         font-weight: bold;
       }
 
       h3 {
-        font-size: 1.2rem;
+        font-size: $h3-font-size;
         margin-top: -25px;
         letter-spacing: 1px;
         color: orangered;
-        background: linear-gradient(45deg, #01ad88, #00a179); 
+        background: linear-gradient(45deg, #01ad88, #00a179);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
       }
 
       p {
-        font-size: 1rem;
+        font-size: $p-font-size;
+        line-height: $line-height-normal;
+        font-family: $p-font-family;
         margin-bottom: 0.5rem;
         color: #555;
       }
@@ -230,16 +240,17 @@
         height: 250px;
         border-radius: 10px;
         object-fit: cover;
-        transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
-    }
-    
-    img:hover {
-        transform: scale(1.1); /* Aplica o efeito de zoom sem alterar o tamanho */
-        /* Ajuste o valor de 1.2 para o nível de zoom desejado */
-    }
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(
+          1.1
+        );
+      }
 
       h3 {
-        font-size: 1.5rem;
+        font-size: $h3-font-size;
         font-weight: bold;
         border-bottom: 0;
         line-height: 1.4rem;
@@ -255,14 +266,15 @@
       }
 
       p {
-        font-size: 0.9rem;
+        font-size: $p-font-size;
+        line-height: $line-height-normal;
+        font-family: $p-font-family;
         margin-top: 0;
         color: #555;
       }
     }
   }
 }
-
 
 .congressos-section {
   align-items: flex-start;
@@ -272,35 +284,35 @@
   margin: auto;
   border-bottom: 1px solid black;
 
-
   .congressos-content {
     flex: 1;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    
+
     h2 {
-      font-size: 2.5rem;
+      font-size: $h2-font-size;
       margin-bottom: 1rem;
       font-weight: bold;
-      width: 45%;
+      width: 40%;
       padding: 15px;
+      margin-right: 45px;
     }
 
     p {
-      font-size: 1rem;
+      font-size: $p-font-size;
+      font-family: $p-font-family;
       margin-top: 50px;
       color: #555;
       width: 45%;
-      margin-left: 50px;
-      line-height: 1.3rem;
+      margin-left: 0px;
+      line-height: $line-height-normal;
     }
 
     .congressos-footer {
       display: flex;
       gap: 10px;
       width: 100%;
-      background-color: yellow;
       font-size: 0.9rem;
       color: #888;
 
@@ -315,27 +327,29 @@
 
   .congressos-images {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     gap: 30px;
     margin-top: 25px;
     .main-image {
-      width: 50%;
+      width: 45%;
+      height: 700px;
       img {
         width: 100%;
-        height: 550px;
+        height: 700px;
         object-fit: cover;
       }
     }
 
     .side-images {
+      width: 55%;
+      justify-content: space-between;
       display: flex;
-      gap: 30px;
-      width: 50%;
-
+      flex-wrap: wrap;
       img {
-        width: 350px;
-        height: 300px;
-        object-fit: cover;
+        width: 49%;
+        height: 340px;
+        margin: auto;
+        padding: 1px;
       }
     }
   }
@@ -345,7 +359,7 @@
   width: 100%;
   height: 550px;
   background-color: rgb(48, 48, 48);
-  background-image: url('../assets/9.jpg');
+  background-image: url("../assets/9.jpg");
   background-position: center;
   align-items: center;
   display: inline-block;
@@ -354,11 +368,11 @@
   h2 {
     color: wheat;
     text-align: center;
-    font-size: 3rem;
+    font-size: $h2-font-size;
     margin-top: 100px;
 
     strong {
-       color: yellow;
+      color: yellow;
     }
   }
 
@@ -367,7 +381,7 @@
     text-align: center;
     font-weight: normal;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: $h3-font-size;
     letter-spacing: 3px;
   }
 }
@@ -392,10 +406,10 @@
       margin-left: 0;
 
       h2 {
-        font-size: 3rem;
+        font-size: $h2-font-size;
       }
     }
-  
+
     .parceiros-imagem {
       width: 50%;
       height: auto;
@@ -408,27 +422,25 @@
       }
     }
   }
-
 }
 
 .contato-section {
   padding: 40px;
   height: 600px;
   background-color: #f8f8f8;
-  background-image: url('./6.jpg');
-
+  background-image: url("./6.jpg");
 
   h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: $h2-font-size;
     color: white;
   }
 
   .desktop {
     text-align: center;
     width: 80%;
-    font-size: 1rem;
+    font-size: $p-font-size;
     line-height: 1.5rem;
     letter-spacing: 1px;
     margin: auto;
@@ -471,15 +483,27 @@
 }
 
 @media (max-width: 1440px) {
-  .congressos-section {
-    padding: 0;
+  .featured {
+    .featured-main {
+      height: auto;
+      display: inline-block;
 
-    .congressos-content {
-      
-    }
+      img {
+        margin-top: 45px;
+        width: 100%;
+        border-radius: 2px;
+        height: 450px;
+        margin: auto;
+        margin-top: 3rem;
+      }
 
-    .congressos-images {
-      width: 70%;
+      .featured-main-content {
+        width: 100%;
+
+        h2 {
+          font-size: $h2-font-size;
+        }
+      }
     }
   }
 
@@ -488,9 +512,9 @@
       .text {
         h2 {
           font-size: 4rem;
-          line-height: 4.2rem;
+          line-height: 5rem;
           strong {
-            margin-left: 15px;
+            margin-left: 55px;
           }
         }
       }
@@ -502,8 +526,6 @@
   }
 }
 
-
-/* Responsivo para tablets */
 @media (max-width: 1024px) {
   .container {
     .textContainer {
@@ -514,64 +536,32 @@
     }
   }
 
-
-.contadorSection {
-
-  button {
-    margin-left: 38.5%;
+  .contadorSection {
+    button {
+      margin-left: 38.5%;
+    }
   }
-}
-
-
   .featured {
-
-     .featured-main {
-
-
-       img {
-
-       }
-
-       .featured-main-content {
-   
-         h2 {
-          font-size: 2rem;
-         }
-         h3 {
-
-         }
-
-         p {
-
-         }
-         span {
-
-         }
-       }
-     }
-
-     .featured-secondary {
-       .card {
+    .featured-secondary {
+      .card {
         gap: 5px;
         padding: 0;
         width: 98%;
-       }
-     }
-   }
+      }
+    }
+  }
 
   .content {
-
     .cardContent {
       height: auto;
 
       .text {
         padding: 25px;
         width: 50%;
-        
 
         p {
-          font-size: .9rem;
-          line-height: 1.2rem;
+          font-size: $p-font-size;
+          line-height: $line-height-normal;
         }
       }
 
@@ -582,24 +572,15 @@
   }
 
   .parceiros-section {
-
     .parceiros-content {
-  
-  
-      .parceiros-texto {
-  
-      }
-    
       .parceiros-imagem {
         img {
-          width: 250px ;
+          width: 250px;
           padding: 15px;
         }
       }
     }
-  
   }
-  
 
   .congressos-section {
     padding: 0;
@@ -624,27 +605,34 @@
       width: 100%;
       gap: 5px;
 
-       .main-image {
+      .main-image {
         width: 40%;
+        height: auto;
 
         img {
           height: 270px;
         }
-       }
+      }
 
-       .side-images {
+      .side-images {
         gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
         img {
-          width: 230px;
-          height: 230px;
+          width: 47%;
+          height: 270px;
+          margin-top: 0;
         }
-       }
+
+        .mobile-remove {
+          display: none;
+        }
+      }
     }
   }
-  
 }
 
-/* Responsivo para tablets */
 @media (max-width: 768px) {
   .stats-section {
     height: auto;
@@ -653,241 +641,271 @@
     flex-wrap: wrap;
     .card {
       width: 50%;
-      margin-bottom: 0px; 
+      margin-bottom: 0px;
     }
   }
 
   .content {
     height: auto;
-    flex-direction: column; 
+    flex-direction: column;
 
     .cardContent {
       height: auto;
 
       .text {
-        width: 80%; 
+        width: 80%;
         margin-bottom: 15px;
-  
 
         h2 {
-          font-size: 1.7rem;
+          font-size: $h2-font-size-responsivo;
         }
 
-       p {
-        font-size: 0.95rem;
+        p {
+          font-size: $p-font-size-responsivo;
+        }
       }
     }
   }
-}
 
-.congressos-section {
-  .congressos-content {
-    display: inline;
-  }
-
-  .congressos-images {
-    display: inline;
-     .main-image {
+  .congressos-section {
+    .congressos-content {
       display: inline;
-      width: 100%;
-     }
+    }
 
-     .side-images {
-      display: inline-block;
-      width: 100%;
-      img {
+    .congressos-images {
+      display: inline;
+      .main-image {
+        display: inline;
         width: 100%;
       }
-     }
+
+      .side-images {
+        display: inline-block;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
-}
-.container {
-  .textContainer {
-    h2 {
-      font-size: 4rem;
-      line-height: normal;
+  .container {
+    .textContainer {
+      h2 {
+        font-size: 4rem;
+        line-height: normal;
+      }
     }
   }
 }
 
+@media (max-width: 768px) and (max-height: 1024px) {
+  .content {
+    .cardContent {
+      .text {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
 }
 
-/* Responsivo para celulares */
 @media (max-width: 550px) {
-
-
   .stats-section {
     .card {
-
-
       h3 {
-       font-size: 2rem;
+        font-size: $h3-font-size-responsivo;
       }
 
       p {
-        font-size: 1.3rem;
+        font-size: $p-font-size-responsivo;
       }
     }
   }
 
   .content {
-    height: auto; 
+    height: auto;
 
-      .cardContent {
-        height: auto;
-        display: inline;
+    .cardContent {
+      height: auto;
+      display: inline;
 
-        .text {
-          padding: 10px;
-          margin-bottom: 10px;
-          display: inline-block;
-          width: 90%;
+      .text {
+        padding: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 90%;
 
-           h2 {
-            font-size: 2.5rem;
-            margin-left: 20px;
-            line-height: 2.5rem;
-
-            strong {
-              margin-left: 50px;
-            }
-          }
-
-           p {
-            font-size: 1rem;
-            line-height: 1.5;
-            margin-top: -35px;
-            padding: 20px;
-            width: 100%;
-          }
-
-          button {
-            margin-left: 20px;
-          }
-        }
-      }
-    }
-    .container {
-      margin-top: 50px;
-      .textContainer {
-        height: auto;
         h2 {
           font-size: 2.3rem;
+          margin-left: 20px;
+          line-height: 2.5rem;
+
+          strong {
+            margin-left: 50px;
+          }
+        }
+
+        p {
+          font-size: $p-font-size-responsivo;
+          line-height: $line-height-normal;
+          margin-top: -35px;
+          padding: 20px;
+          width: 100%;
+        }
+
+        button {
+          margin-left: 20px;
         }
       }
     }
-
-
-.parceiros-section {
-
-  .parceiros-content {
-
-    display: inline-block;
-    .parceiros-texto {
-      width: 100%;
-      margin: auto;
-    }
-  
-    .parceiros-imagem {
-      width: 100%;
-      margin: auto;
-      margin-top: 75px;
-      img {
-        padding: 0;
-        margin-left: 0;
-        margin-top: 25px;
+  }
+  .container {
+    margin-top: 50px;
+    .textContainer {
+      height: auto;
+      h2 {
+        font-size: $h2-font-size-responsivo;
       }
     }
   }
 
-}
-
-
-    .featured {
-     width: 100%;
-
-      .featured-main {
-        display: inline;
+  .parceiros-section {
+    .parceiros-content {
+      display: inline-block;
+      .parceiros-texto {
+        width: 100%;
         margin: auto;
-        width: 90%;
-
-        img {
-          width: 80%;
-          margin-left: 25px;
-          display: none;
-        }
-
-        .featured-main-content {
-          width: 100%;
-    
-          h2 {
-            width: 90%;
-            font-size: 1.5rem;
-            margin-left: 25px;
-          }
-          h3 {
-            margin-left: 25px;
-          }
-
-          p {
-            margin-left: 25px;
-            width: 90%;
-          }
-          span {
-            margin-left: 25px;
-            margin-top: 15px;
-            font-weight: bold;
-            width: 90%;
-          }
-        }
       }
 
-      .featured-secondary {
-        display: inline;
-        width: 90%;
-        margin-left: 45px;
+      .parceiros-imagem {
+        width: 100%;
+        margin: auto;
+        margin-top: 75px;
+        img {
+          padding: 0;
+          margin-left: 0;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
 
-        .card {
+  .featured {
+    width: 100%;
+
+    .featured-main {
+      display: inline;
+      margin: auto;
+      width: 90%;
+
+      img {
+        width: 80%;
+        margin-left: 25px;
+        display: none;
+      }
+
+      .featured-main-content {
+        width: 100%;
+
+        h2 {
+          width: 90%;
+          font-size: $h2-font-size-responsivo;
+          margin-left: 25px;
+        }
+        h3 {
+          margin-left: 25px;
+        }
+
+        p {
+          margin-left: 25px;
+          width: 90%;
+        }
+        span {
+          margin-left: 25px;
+          margin-top: 15px;
+          font-weight: bold;
           width: 90%;
         }
       }
     }
 
-    .contadorSection {
-      width: 100%;
-      height: 600px;
+    .featured-secondary {
+      display: inline;
+      width: 90%;
+      margin-left: 45px;
 
-      h2 {
-        font-size: 2rem;
+      .card {
         width: 90%;
-        margin: auto;
-        margin-top: 100px;
-      }
-
-      button {
-        margin-left: 22%;
-      }
-    
-    }
-
-    .contato-section {
-      padding: 40px;
-      width: 80%;
-      height: auto;
-      background-color: #f8f8f8;
-
-      .desktop {
-        display: none;
-      }
-      .mobile {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        letter-spacing: 1px;
-        margin: auto;
-        color: whitesmoke;
-        display: flex;
-        width: 100%;
       }
     }
+  }
+
+  .contadorSection {
+    width: 100%;
+    height: 600px;
+
+    h2 {
+      font-size: $h2-font-size-responsivo;
+      width: 90%;
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    button {
+      margin-left: 22%;
+    }
+  }
+
+  .contato-section {
+    padding: 40px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-left: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 1px;
+      margin: auto;
+      color: whitesmoke;
+      display: flex;
+      width: 90%;
+    }
+    .contato-content {
+      width: 100%;
+
+      .contato-form {
+        margin: auto;
+
+        .form-group {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) and (max-height: 845px) {
+  .content {
+    .cardContent {
+      .text {
+        h2 {
+          font-size: 2.5rem;
+
+          strong {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
 }

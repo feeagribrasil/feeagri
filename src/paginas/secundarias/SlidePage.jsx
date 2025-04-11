@@ -1,11 +1,10 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import Header from '../../componentes/Header';
-import '../../styles/SecundaryPage.scss'
-import Footer from '../../componentes/Footer'
-import slidesData from './slidesData';
-import Widget from '../../componentes/WidgetCustom';
-
+import React from "react";
+import { useParams } from "react-router-dom";
+import Header from "../../componentes/Header";
+import "../../styles/SecundaryPage.scss";
+import Footer from "../../componentes/Footer";
+import slidesData from "./slidesData";
+import Widget from "../../componentes/WidgetCustom";
 
 export default function SlidePage() {
   const { slug } = useParams();
@@ -18,7 +17,7 @@ export default function SlidePage() {
   return (
     <div>
       <Header />
-      <div className='secundaryPage'></div>
+      <div className="secundaryPage"></div>
       <div className="containerSecundaryPage">
         <h2>{slide.title}</h2>
         <h3>{slide.content}</h3>
@@ -33,9 +32,7 @@ export default function SlidePage() {
           <div className="widgets">
             <Widget />
           </div>
-         
         </div>
-       
       </div>
       <Footer />
     </div>

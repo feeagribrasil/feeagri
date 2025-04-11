@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import '../styles/Contador.scss'
-import '../styles/Events.scss'
+import "../styles/Contador.scss";
+import "../styles/Events.scss";
 
 const Contador = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
