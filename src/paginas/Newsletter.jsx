@@ -26,43 +26,18 @@ export default function Newsletter() {
       </div>
 
       <section className="newsletter-posts">
+        <h2>Veja todas nossas publicações e atualizações. Inscreva-se para ficar por dentro de novidades da área agrícola, estágios, eventos futuros e comunicação acadêmica</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ab maxime est ullam quisquam, dicta necessitatibus autem aperiam accusamus sequi dolorem aliquam ratione accusantium doloribus nulla itaque totam? Tenetur, quae?</p>
+        
         <div className="post">
           <h3>
-            <Link to={`/post`}>#3. Eleições para o conselho diretivo</Link>
+            <Link to={`/post`}> #1 Newsletter</Link>
           </h3>
           <p>
             Confira as novidades que os membros do conselho diretivo prepararam
             para garantir maior representatividade nas eleições.
           </p>
           <span className="date">March 3, 2025</span>
-        </div>
-        <div className="post">
-          <h3>
-            <Link to={`/post`}>#2. Eleições para o conselho diretivo</Link>
-          </h3>
-          <p>
-            A sustentabilidade é um tema cada vez mais presente na engenharia
-            agrícola. O uso de técnicas de cultivo mais eficientes, como a
-            agricultura de precisão e a rotação de culturas, está ajudando a
-            reduzir o impacto ambiental das práticas agrícolas. A inovação nesse
-            setor é fundamental para garantir a produção de alimentos de forma
-            responsável e com menor impacto no meio ambiente.
-          </p>
-          <span className="date">March 2, 2025</span>
-        </div>
-        <div className="post">
-          <h3>
-            <Link to={`/post`}>#1. Eleições para o conselho diretivo</Link>
-          </h3>
-          <p>
-            O Brasil, apesar de ser um país com abundância hídrica, enfrenta
-            desafios significativos na gestão da irrigação. A engenharia
-            agrícola desempenha um papel crucial na implementação de sistemas
-            eficientes que otimizem o uso da água nas lavouras, evitando
-            desperdícios e garantindo o abastecimento para a agricultura em
-            diferentes regiões do país.
-          </p>
-          <span className="date">March 1, 2025</span>
         </div>
       </section>
 

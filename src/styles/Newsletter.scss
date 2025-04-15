@@ -96,27 +96,37 @@
   width: 80%;
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 75px;
+  margin-bottom: 255px;
   padding: 20px;
-  border-radius: 8px;
+  border-bottom: 1px solid rgb(165, 165, 165);
 }
 
 .newsletter-posts .post {
-  background-color: #fff;
+  background-color: #1d1d1d;
+  width: 25%;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 35px;
   border-radius: 5px;
+  margin-top: 75px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.newsletter-posts .post h3 {
+
+.newsletter-posts h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.newsletter-posts .post h3 a {
   font-size: 1.3rem;
   margin-bottom: 10px;
+  color: rgb(253, 208, 5);
 }
 
 .newsletter-posts .post p {
   font-size: 1rem;
-  color: #555;
+  color: #f1f1f1;
 }
 
 .newsletter-posts .post .date {
@@ -126,7 +136,7 @@
   color: #999;
 }
 
-@media (max-width: 10240px) {
+@media (max-width: 1024px) {
   .Newsletter {
     height: auto;
 
@@ -142,6 +152,16 @@
 }
 
 @media (max-width: 550px) {
+  .newsletter-posts .post {
+    width: 80%;
+
+  }
+
+  .newsletter-posts h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    width: 100%;
+  }
   .Newsletter {
     .container {
       h2 {

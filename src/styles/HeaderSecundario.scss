@@ -59,6 +59,25 @@
   }
 }
 
+@media (max-width: 1250px) {
+  .HeaderSecundario {
+
+    .container {
+
+      h2 {
+        font-size: 3rem;
+        letter-spacing: 0;
+      }
+
+      p {
+        line-height: normal;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 550px) {
   .HeaderSecundario {
     .links {
