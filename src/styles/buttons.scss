@@ -95,8 +95,34 @@
   }
 }
 
+.yellow-btn {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(241, 241, 241, 0.541);
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: yellow;
+  }
+
+  a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: .2px;
+  }
+}
+
 @media (max-width: 768px) {
   .button_primary_members {
     width: 270px;
   }
 }
+
+@media (max-width: 550px) {
+  .yellow-btn {
+    margin-bottom: 25px;
+  }
+}
+

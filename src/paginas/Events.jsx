@@ -6,6 +6,7 @@ import "../styles/HeaderSecundario.scss";
 import "../styles/Events.scss";
 import Footer from "../componentes/Footer";
 import Contador from "../componentes/Contador";
+import '../styles/buttons.scss'
 
 import Imagem1 from "../assets/coneeagri.jpeg";
 import Imagem2 from "../assets/c1.jpeg";
@@ -135,12 +136,15 @@ export default function Events() {
                 </div>
                 <h3>{congresso.title}</h3>
                 <p>{congresso.description}</p>
-                <Link
-                  to={`/congressos/${congresso.slug}`}
-                  className="Hero__button"
-                >
-                  Saiba mais
-                </Link>
+                <button className="yellow-btn">
+                  <Link
+                    to={`/congressos/${congresso.slug}`}
+                    className="Hero__button"
+                  >
+                    saiba mais
+                  </Link>
+                </button>
+
               </div>
             ))}
           </div>

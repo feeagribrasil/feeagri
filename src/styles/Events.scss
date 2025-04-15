@@ -1,15 +1,18 @@
+@import "variables";
+
 .container_events {
   width: 100%;
-  height: 75vh;
+  height: auto;
   background-color: black;
   background-image: url("./12.jpg");
   display: flex;
 
   .container {
     width: 100%;
-    height: 40%;
+    height: auto;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
     background-color: transparent;
     align-items: center;
     display: flex;
@@ -72,21 +75,19 @@
       width: 20%;
 
       h2 {
-        font-size: 2.5rem;
-        width: 70%;
+        font-size: $h2-font-size-custom;
+        width: 80%;
         margin-bottom: 1rem;
         font-weight: bold;
       }
 
       h3 {
-        font-size: 1.2rem;
+        font-size: $h3-font-size;
         margin-top: -25px;
         letter-spacing: 1px;
-        color: orangered;
-        background: linear-gradient(45deg, #01ad88, #00a179);
+        color: rgb(5, 199, 157);
         -webkit-background-clip: text;
         background-clip: text;
-        color: transparent;
       }
 
       p {
@@ -137,7 +138,7 @@
 
         h2 {
           font-size: 1.5rem;
-          color: rgb(0, 248, 186);
+          color: rgb(255, 255, 255);
           margin: auto;
           letter-spacing: 3px;
         }
@@ -154,9 +155,7 @@
         margin-top: 0;
         color: #555;
       }
-      a {
-        font-weight: 600;
-      }
+
     }
   }
 }
@@ -172,7 +171,7 @@
   h2 {
     color: wheat;
     text-align: center;
-    font-size: 3rem;
+    font-size: $h2-font-size;
     margin-top: 100px;
 
     strong {
@@ -189,11 +188,11 @@
 
 @media (max-width: 1440px) {
   .container_events {
+
     .container {
       h2 {
         font-size: 3rem;
         line-height: 3.5rem;
-        margin-top: 5rem;
       }
       h3 {
         font-size: 1.2rem;
@@ -210,15 +209,26 @@
       }
     }
   }
+
+
+  .featuredSec-secondary {
+    .card {
+      .img {
+        h2 {
+          text-align: center;
+          font-size: 1rem;
+          color: yellow;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
   .container_events {
-    height: 650px;
 
     .container {
       h2 {
-        margin-top: 2rem;
         letter-spacing: 20px;
       }
     }
@@ -267,7 +277,6 @@
         font-size: 2rem;
         line-height: 3rem;
         margin-left: auto;
-        margin-top: 0rem;
         letter-spacing: 15px;
       }
       h3 {
@@ -296,6 +305,12 @@
 
       .card {
         width: 100%;
+
+        .img {
+          h2 {
+            font-size: 1.2rem;
+          }
+        }
       }
     }
   }

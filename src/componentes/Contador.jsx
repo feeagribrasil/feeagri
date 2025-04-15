@@ -6,7 +6,7 @@ const Contador = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
-    const targetDate = new Date("2025-12-31T23:59:59");
+    const targetDate = new Date("2025-10-27T23:59:59");
     const now = new Date();
     const difference = targetDate - now;
 

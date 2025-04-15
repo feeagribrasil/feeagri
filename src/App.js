@@ -16,6 +16,7 @@ import Suporte from "./paginas/Suporte";
 import DelegacaoSup from "./paginas/DelegacaoSup";
 import ConselhoDiretivo from "./paginas/ConselhoDiretivo";
 import NewsletterPost from "./paginas/NewsletterPosts";
+import Instituicoes from "./paginas/Instituicoes";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
       <Route path="/delegacao" element={<DelegacaoSup />} />
       <Route path="/conselho-diretivo" element={<ConselhoDiretivo />} />
       <Route path="/post" element={<NewsletterPost />} />
+      <Route path="/instituicoes" element={<Instituicoes />} />
 
 
     </Routes>

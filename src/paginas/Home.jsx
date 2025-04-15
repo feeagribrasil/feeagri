@@ -231,10 +231,6 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="congressos-footer">
-            <span>Ano: 2024 | </span>
-            <span>Category: Edição especial</span>
-          </div>
         </div>
 
         <div className="parceiros-section">
